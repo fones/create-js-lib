@@ -1,0 +1,35 @@
+{
+  "name": "create-js-lib",
+  "version": "1.0.0",
+  "description": "Template for building Vanilla JavaScript libs",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --progress --watch --mode development",
+    "lint": "eslint src ./*.js",
+    "ws": "ws -p 4001 -d ./lib"
+  },
+  "browserslist": [
+    "defaults",
+    "ie>=9"
+  ],
+  "author": "fones",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^4.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "local-web-server": "^5.1.1",
+    "prettier": "^2.5.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
